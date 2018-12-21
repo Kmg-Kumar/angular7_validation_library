@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ValidationModule } from './validation/validation.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ValidationService } from './services/validation.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,9 +19,11 @@ import { ValidationComponent } from './validation/validation.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ValidationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

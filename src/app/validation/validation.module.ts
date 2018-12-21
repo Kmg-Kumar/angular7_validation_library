@@ -13,3 +13,4 @@ import { ValidationComponent } from './validation.component';
     declarations: [ValidationComponent],
     exports: [ValidationComponent]
 })
+export class ValidationModule { }
